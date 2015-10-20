@@ -1,3 +1,4 @@
+# Latex compilation output
 *.acn
 *.acr
 *.alg
@@ -16,3 +17,6 @@
 *.snm
 *.toc
 *.nav
+
+# VIM
+*.swp
