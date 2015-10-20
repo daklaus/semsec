@@ -1,0 +1,5 @@
+Wed Mar 13 19:46:41 CET 2013
+
+Necessary  links:
+ln -s ../general/misc/* .
+ln -s ../general/paper/* .

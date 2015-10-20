@@ -1,0 +1,30 @@
+% This file was created with JabRef 2.7b.
+% Encoding: ISO8859_1
+
+@BOOK{grechenig:2009:softwaretechnik,
+  title = {Softwaretechnik -- Mit Fallbeispielen aus realen Entwicklungsprojekten},
+  publisher = {Pearson Studium},
+  year = {2009},
+  author = {Grechenig, Thomas and Bernhart, Mario and Breiteneder, Roland and
+	Kappel, Karin},
+  edition = {1},
+  isbn = {978-3868940077},
+  url = {http://www.inso.tuwien.ac.at/publications/softwaretechnik/}
+}
+
+@ARTICLE{li:1999:hints-on-writing-technical-papers-and-making-presentations,
+  author = {Li, Victor O. K.},
+  title = {Hints on writing technical papers and making presentations},
+  journal = {Education, IEEE Transactions on},
+  year = {1999},
+  pages = {134--137},
+  month = {may},
+  abstract = {This paper is an attempt to give some guidelines on how to write a
+	good technical paper and to make good presentations, important skills
+	for a successful career in research and teaching},
+  doi = {10.1109/13.762947},
+  keywords = {Books;Education;Engineering profession;Guidelines;Numerical models;Radio
+	access networks;Writing;technical presentation;research;teaching;technical
+	paper structure;technical papers writing;thesis presentation;}
+}
+

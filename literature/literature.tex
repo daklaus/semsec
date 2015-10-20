@@ -1,0 +1,74 @@
+\documentclass[]{beamer} % die option 't' sorgt dafür, dass der content nicht automatisch auf die folie zentriert
+
+\usepackage[utf8]{inputenc}
+% \inputencoding{latin1} % for windows user
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{default}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\graphicspath{{figures/}{imgs/}}
+\usepackage[backend=bibtex,style=ieee]{biblatex}
+\bibliography{bib/db.bib}
+\usepackage[acronym,shortcuts]{glossaries}
+\makeglossaries
+\InputIfFileExists{abbrev/acronyms}{}{}
+
+
+\usetheme{INSO}
+
+\title{Presentation of the Literature}
+%\subtitle{Short title}
+\author{<Firstname> <Lastname>}
+\matrnr{<matrnr>}
+\date{\today}
+%\advisor{%
+%	Betreuer 1\\
+%	Betreuer 2
+%}
+
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}[t]{Outline}
+	\begin{minipage}[t][10em][t]{\linewidth}
+		\tableofcontents
+	\end{minipage}
+\end{frame}
+
+\section{The selected paper}
+
+\begin{frame}{The selected paper}
+	A few sentences about the content of the selected paper.
+\end{frame}
+
+\section{My paper}
+
+\begin{frame}{My paper}
+	Title: here should be the preliminary title of your paper
+	
+	Preliminary content:
+	\begin{itemize}
+		\item A few key words of what your paper will contain
+		\item ...
+	\end{itemize}
+\end{frame}
+
+\section{Related Work}
+
+\begin{frame}[allowframebreaks]{References}
+	\nocite{grechenig:2009:softwaretechnik}
+	% \nocite{*}
+	\printbibliography
+\end{frame}
+
+\begin{titleframe}
+	\begin{center}
+	\alert{\Large Thank you!}
+	\end{center}
+\end{titleframe}
+
+\end{document}

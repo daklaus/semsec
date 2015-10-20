@@ -1,0 +1,36 @@
+% Copyright 2012 by INSO - Industrial Software
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+\ProvidesPackage{beamercolorthemeINSO}[2012/12/02 v. 0.01]
+
+\mode<presentation>
+
+\definecolor{INSOred}{rgb}{.78,0,.19}
+\definecolor{INSOgray}{rgb}{.37,.37,.37}
+\definecolor{INSOblack}{rgb}{.0,.0,.0}
+\definecolor{INSOwhite}{rgb}{1,1,1}
+
+%
+
+\setbeamercolor*{frametitle}{fg=INSOwhite,bg=INSOred}
+\setbeamercolor*{headline}{use=frametitle}
+\setbeamercolor*{footline}{fg=INSOgray}
+% 
+\setbeamercolor*{normal text}{fg=INSOgray}
+\setbeamercolor*{alerted text}{fg=INSOred}
+\setbeamercolor*{item}{fg=INSOred}
+\setbeamercolor*{subitem}{fg=INSOgray}
+\setbeamercolor*{subsubitem}{use=itemize subitem}
+% 
+\setbeamercolor*{titlelike}{fg=INSOred}
+\setbeamercolor*{structure}{fg=INSOgray}
+
+\mode<all>
+
+\endinput

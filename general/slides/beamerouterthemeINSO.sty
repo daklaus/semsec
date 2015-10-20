@@ -1,0 +1,124 @@
+% Copyright 2012 by INSO - Industrial Software
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+\ProvidesPackage{beamerouterthemeINSO}[2012/12/02 v. 0.01]
+
+\mode<presentation>
+
+% beamer size
+\newlength\beamer@frametitle@margin
+\setlength\beamer@frametitle@margin{30pt}
+\setlength\textwidth{\paperwidth}
+\addtolength\textwidth{0.2\paperwidth}
+\setbeamersize{text margin left=0.1\paperwidth, text margin right=0.1\paperwidth}
+
+% logo definieren
+\pgfdeclareimage[width=\paperwidth]{banner}{imgs/inso-banner.pdf}
+
+\newbox\logo@imagebox
+\sbox\logo@imagebox{%
+  \includegraphics[height=5mm]{imgs/esse.pdf}\hspace{0.5mm}%
+  \includegraphics[height=5mm]{imgs/inso.pdf}\hspace{0.5mm}%
+  \includegraphics[height=5mm]{imgs/informatik.pdf}\hspace{0.5mm}%
+  \includegraphics[height=5mm]{imgs/tu-sw.pdf}\hspace{0.5mm}%
+}
+
+% footline
+%
+\newcommand{\INSO@footline}{%
+	\pgfimage[height=5mm]{imgs/esse.pdf}\hspace{0.5mm}%
+	\pgfimage[height=5mm]{imgs/inso.pdf}\hspace{0.5mm}%
+	\pgfimage[height=5mm]{imgs/informatik.pdf}\hspace{0.5mm}%
+	\pgfimage[height=5mm]{imgs/tu-sw.pdf}\hspace{0.5mm}%
+    \hspace{5mm}\parbox[b]{0.6\paperwidth}{%
+		\insertshorttitle\ \textbar{} \insertauthor\ifx\insertmatrnr\@empty\else\ \textbar{} \insertmatrnr\fi%
+		\hfill%
+		\insertframenumber{}\,/\,\inserttotalframenumber{}%
+		\vspace{0.5pt}%
+	}%
+}
+\newcommand{\INSO@titlefootline}{%
+	\pgfimage[height=7mm]{imgs/esse.pdf}\hspace{1mm}%
+	\pgfimage[height=7mm]{imgs/inso.pdf}\hspace{1mm}%
+	\pgfimage[height=7mm]{imgs/informatik.pdf}\hspace{1mm}%
+	\pgfimage[height=7mm]{imgs/tu-sw.pdf}\hspace{1mm}%
+	\parbox[b]{0.6\paperwidth}{%
+		\IfLanguageName{english}{%
+			\textbf{INSO - Industrial Software}\\[2pt] Institute of Computer Aided Automation \textbar{} Faculty of Informatics \textbar{} Vienna University of Technology%
+		}{%
+			\textbf{INSO - Industrial Software}\\[2pt] Institut f{\"u}r Rechnergest{\"u}tzte Automation \textbar{} Fakult{\"a}t f{\"u}r Informatik \textbar{} Technische Universit{\"a}t Wien%
+		}
+		\vspace{0.5pt}%
+	}%
+}
+\defbeamertemplate*{footline}{INSO}{%
+	\begin{beamercolorbox}[leftskip=0.09\paperwidth,rightskip=0.04\paperwidth,dp=0.04\paperheight]{footline}%
+		\usebeamerfont{footline}%
+		\INSO@footline%
+	\end{beamercolorbox}%
+}
+
+\defbeamertemplate*{footline}{INSOtitle}{%
+	\begin{beamercolorbox}[leftskip=0.09\paperwidth,rightskip=0.04\paperwidth,dp=0.09\paperheight]{footline}%
+		\usebeamerfont{footline}%
+		\INSO@titlefootline%
+	\end{beamercolorbox}%
+}
+
+\setbeamertemplate{footline}[INSO]
+
+% frametitle
+
+\defbeamertemplate*{frametitle}{INSO}{%
+	\vspace{-1mm}%
+	\begin{beamercolorbox}[leftskip=0.07\paperwidth,rightskip=0.04\paperwidth,wd=\paperwidth,dp=0.04\paperheight,ht=0.1\paperheight]{frametitle}%
+		\usebeamerfont{frametitle}\insertframetitle{}%
+		\ifx\insertframesubtitle\@empty%
+		\else%
+			~--\ \usebeamerfont{framesubtitle}\insertframesubtitle{}%
+		\fi%
+	\end{beamercolorbox}%
+}
+
+% \setbeamertemplate{frametitle continuation}{\insertcontinuationcount}
+
+\setbeamertemplate{frametitle}[INSO]
+
+% headline
+
+% titlepage
+\setbeamertemplate{title page}{%
+	\begin{beamercolorbox}{titlelike}%
+		\usebeamerfont{title}\inserttitle\par%
+		\vspace{2mm}%
+		\ifx\insertsubtitle\@empty%
+			\usebeamerfont{subtitle}\par%
+		\else%
+			\usebeamerfont{subtitle}\insertsubtitle\par%
+		\fi%
+	\end{beamercolorbox}%
+	\vspace{5mm}%
+	\begin{beamercolorbox}{normal text}%
+		\usebeamerfont{author}\insertauthor\ifx\insertmatrnr\@empty\else\ (\insertmatrnr)\fi\par%
+		\vspace{3mm}%
+		\usebeamerfont{date}\insertdate\par%
+		\vspace{3mm}%
+		\ifx\insertadvisor\@empty%
+		\else%
+			\usebeamerfont{advisor text}betreut durch\par%
+			\usebeamerfont{advisor}\insertadvisor\par%
+		\fi%
+	\end{beamercolorbox}%
+}
+
+% navigation symbols
+
+\beamertemplatenavigationsymbolsempty
+
+\endinput

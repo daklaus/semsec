@@ -1,0 +1,80 @@
+\documentclass[]{beamer} % die option 't' sorgt dafür, dass der content nicht automatisch auf die folie zentriert
+
+\usepackage[utf8]{inputenc}
+% \inputencoding{latin1} % for windows user
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{default}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\graphicspath{{figures/}{imgs/}}
+\usepackage[backend=bibtex,style=ieee]{biblatex}
+\bibliography{bib/db.bib}
+\usepackage[acronym,shortcuts]{glossaries}
+\usepackage{enumerate}
+\makeglossaries
+\InputIfFileExists{abbrev/acronyms}{}{}
+
+
+\usetheme{INSO}
+
+\title{Presentation of the Structure}
+%\subtitle{Short title}
+\author{<Firstname> <Lastname>}
+\matrnr{<matrnr>}
+\date{\today}
+%\advisor{%
+%	Betreuer 1\\
+%	Betreuer 2
+%}
+
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+\maketitle
+
+%\begin{frame}[t]{Outline}
+%	\begin{minipage}[t][10em][t]{\linewidth}
+%		\tableofcontents
+%	\end{minipage}
+%\end{frame}
+
+\begin{frame}{Paper Structure}
+	The title of the paper
+	\begin{itemize}
+		\item Introduction
+	
+			Some detailed information about the content of this section
+
+		\item Related Work
+
+			Some detailed information about the content of this section
+			%This chapter is obligatory. It shall present other papers that are related to your paper shortly.
+			%These related papers may be work that your work is basing on or shows other attemps to solve the same problem.
+
+		\item ...
+
+		\item Conclusion
+
+		\item References
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Slide Structure}
+	The title of the slides
+	\begin{itemize}
+		\item Introduction
+		\item Related Work
+		\item ...
+		\item Conclusion
+	\end{itemize}
+\end{frame}
+
+\begin{titleframe}
+	\begin{center}
+	\alert{\Large Thank you!}
+	\end{center}
+\end{titleframe}
+
+\end{document}

@@ -1,0 +1,15 @@
+Instructions:
+
+1) For using texlive under debian bases systems you will need to install the following packages:
+
+sudo apt-get install texlive-latex-base
+sudo apt-get install texlive-latex-extra
+sudo apt-get install powerdot
+sudo apt-get install collection-latexrecommended
+sudo apt-get install texlive-fonts-recommended
+sudo apt-get install texlive-bibtex-extra
+sudo apt-get install texlive-humanities 
+ 
+2) Create the symbolic links as specified in the subfolders
+
+3) Build Pdf using make file (e.g. make all)

@@ -1,0 +1,114 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[conference]{IEEEtran}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
+\usepackage[backend=bibtex,style=ieee]{biblatex}
+\usepackage{hyperref}
+\usepackage[acronym,shortcuts]{glossaries}
+\usepackage[switch]{lineno}
+\usepackage{blindtext}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% correct bad hyhenpation here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% paper specific commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% paper specific settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \inputencoding{latin1} % for Windows user
+\makeglossaries
+\InputIfFileExists{abbrev/acronyms}{}{}
+\bibliography{bib/db.bib}
+\graphicspath{{figures/}}
+\hypersetup{
+	colorlinks=false,
+	pdfborder={0 0 0},
+}
+\renewcommand\thelinenumber{\color{gray}\arabic{linenumber}}
+\linenumbers % [LINE NUMBERS ARE REQUIRED BECAUSE OF THE REVIEW] comment this line if you don't want linenumbers %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% paper specific inforamtions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Title of the Paper: It should be concise and to the point.}
+\author{%
+	\IEEEauthorblockN{%
+		<Firstname> <Lastname>
+	}
+	\IEEEauthorblockA{\itshape%
+		Vienna University of Technology\\
+		Industrial Software (INSO)\\
+		1040 Vienna, Austria\\
+		E-mail: \email{<email>}
+	}
+}
+\IEEEspecialpapernotice{Student Paper for \emph{183.606 Seminar aus Security SE}, WS20XX}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEGIN document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\maketitle
+
+\begin{abstract}
+	This is a template based on IEEE for students of \ac{ESSE} with an example cite \cite{grechenig:2009:softwaretechnik}.
+
+	A good overview about writing a paper is given in \citeauthor{li:1999:hints-on-writing-technical-papers-and-making-presentations} in \cite{li:1999:hints-on-writing-technical-papers-and-making-presentations}.
+
+	The abstract is a summary of the paper, including a brief description of the problem, the solution, and conclusions. Do not cite references in the abstract.
+\end{abstract}
+
+\begin{IEEEkeywords}
+	Keywords should be selected such that a computerized search will be facilitated.
+\end{IEEEkeywords}
+
+\IEEEpeerreviewmaketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+The introduction should contain the background of the problem, why it is important, and what others have done to solve this problem. All related existing work should be properly described and referenced. The proposed solution should be briefly described, with explanations of how it is different from, and superior to, existing solutions. The last paragraph should be a summary of what will be described in each subsequent section of the paper.
+
+\section{Related Work}
+
+This sections contains further publications similar to this topic. However, it can also be used to distinguish this paper to other publications.
+
+Related work can also be used to give the reader references to publications which give more details about a topic.
+
+\section{Main chapters}
+
+The main chapters contain the research information.
+
+\section{Conclusion}
+
+This summarizes what has been done and concludes based on the results. A description of future research should also be included.  
+
+% \section*{Acknowledgment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\printbibliography
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+\endinput
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
