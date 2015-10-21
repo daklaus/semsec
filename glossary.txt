@@ -1,0 +1,14 @@
+CACC     Cooperative Adaptive Cruise Control
+V2V      Vehicle to vehicle
+V2I      Vehicle to infrastructure
+V2X      Vehicle to x
+VANET    Vehicular ad-hoc network
+SCMS     Security Credential Management System
+VENTOS   Vehicular Network Open Simulator
+TPM      Trusted platform module
+USDOT    United States Department of Transportation
+WAVE     Wireless Access in Vehicular Environment
+DDoS     Distributed Denial of Service
+ITS      Intelligent Transportation System
+IVC      Inter-vehicle communication
+DSRC     Dedicated Short Range Communications
