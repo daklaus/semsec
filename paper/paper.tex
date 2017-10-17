@@ -44,19 +44,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % paper specific inforamtions
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Title of the Paper: It should be concise and to the point.}
+\title{Comparing V2V and V2I communication technologies with respect to their security implications}
 \author{%
 	\IEEEauthorblockN{%
-		<Firstname> <Lastname>
+		Klaus Krapfenbauer
 	}
 	\IEEEauthorblockA{\itshape%
 		Vienna University of Technology\\
 		Industrial Software (INSO)\\
 		1040 Vienna, Austria\\
-		E-mail: \email{<email>}
+		E-mail: \email{klaus.krapfenbauer@gmail.com}
 	}
 }
-\IEEEspecialpapernotice{Student Paper for \emph{183.606 Seminar aus Security SE}, WS20XX}
+\IEEEspecialpapernotice{Student Paper for \emph{183.606 Seminar aus Security SE}, WS2015}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BEGIN document
@@ -75,7 +75,7 @@
 \end{abstract}
 
 \begin{IEEEkeywords}
-	Keywords should be selected such that a computerized search will be facilitated.
+	V2I, V2V, VANET, CACC, vehicle communication security
 \end{IEEEkeywords}
 
 \IEEEpeerreviewmaketitle
@@ -86,13 +86,57 @@
 
 The introduction should contain the background of the problem, why it is important, and what others have done to solve this problem. All related existing work should be properly described and referenced. The proposed solution should be briefly described, with explanations of how it is different from, and superior to, existing solutions. The last paragraph should be a summary of what will be described in each subsequent section of the paper.
 
+\begin{itemize}
+	\item What is V2X communication and VANETs
+	\item State-of-the-art and future possibilities
+	\begin{itemize}
+		\item Applications nowadays and possible advanced applications
+	\end{itemize}
+	\item Why security is important in this field
+\end{itemize}
+
+recipe:
+\begin{itemize}
+	\item para. 1: motivation: broadly, what is problem area, why important?
+	\item para. 2: narrow down: what is problem you specifically consider
+	\item para. 3: "In the paper, we ....": most crucial paragraph, tell your elevator pitch
+	\item para. 4: how different/better/relates to other work
+	\item para. 5: "The remainder of this paper is structured as follows"
+\end{itemize}
+
+
 \section{Related Work}
 
 This sections contains further publications similar to this topic. However, it can also be used to distinguish this paper to other publications.
 
 Related work can also be used to give the reader references to publications which give more details about a topic.
 
-\section{Main chapters}
+\section{Low level technology overview}
+
+The main chapters contain the research information.
+
+\begin{itemize}
+	\item Low level technologies (3G/4G, ZigBee, Wi-Fi) used by the high level protocols
+	\item How well they are suited with respect to the security
+		requirements of vehicular communication
+\end{itemize}
+
+LiDAR, GPS, 3G/4G, 
+
+\section{Communication and application level protocols overview}
+
+The main chapters contain the research information.
+
+Giving an insight of the 
+\begin{itemize}
+	\item protocols,
+	\item communications forms and
+	\item standards (if size permits)
+\end{itemize}
+currently available or in development for being able to understand
+their security implications.
+
+\section{Security related comparison}
 
 The main chapters contain the research information.
 
@@ -100,10 +144,18 @@ The main chapters contain the research information.
 
 This summarizes what has been done and concludes based on the results. A description of future research should also be included.  
 
+\begin{itemize}
+	\item Sum up of the security ups and downs
+	\item Preferences of one technology/protocol over the other in the
+		context of a particular application
+\end{itemize}
+
+
 % \section*{Acknowledgment}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\nocite{*}
 \printbibliography
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
